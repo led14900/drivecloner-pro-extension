@@ -1,0 +1,1 @@
+const e=async()=>{const o=globalThis.chrome;await o.tabs.create({url:o.runtime.getURL("index.html")})},n=globalThis.chrome;n.action.onClicked.addListener(()=>{e().catch(o=>{console.error("Cannot open DriveCloner Pro:",o)})});
